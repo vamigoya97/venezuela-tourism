@@ -1,0 +1,55 @@
+body {
+    background-color: #191970;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+}
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    border: black;
+    border-radius: 25px;
+    padding: 20px 20px 20px 20px;
+    box-shadow:10px 10px black;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    article {
+        display: block;
+    }
+}
+
+@media print {
+    body {
+        background-color: none;
+    }
+    header {
+        display: none;
+    }
+    article {
+        display: block;
+    }
+    section {
+        border: none;
+        padding: 10px 10px 10px 10px;
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    img {
+        width: 60%;
+    }
+    span {
+        text-decoration: underline;
+    }
+
+}
